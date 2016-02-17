@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4DB071341C70B2C200C44D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB071331C70B2C200C44D12 /* AppDelegate.swift */; };
-		4DB071361C70B2C200C44D12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB071351C70B2C200C44D12 /* ViewController.swift */; };
 		4DB071391C70B2C200C44D12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB071371C70B2C200C44D12 /* Main.storyboard */; };
 		4DB0713B1C70B2C200C44D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB0713A1C70B2C200C44D12 /* Assets.xcassets */; };
 		4DB0713E1C70B2C200C44D12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB0713C1C70B2C200C44D12 /* LaunchScreen.storyboard */; };
 		4DB071491C70B2C200C44D12 /* mannerquizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB071481C70B2C200C44D12 /* mannerquizTests.swift */; };
 		4DB071541C70B2C200C44D12 /* mannerquizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB071531C70B2C200C44D12 /* mannerquizUITests.swift */; };
+		4DFB43FC1C749B8300D5F725 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB43FB1C749B8300D5F725 /* ResultViewController.swift */; };
+		4DFB43FE1C749BE000D5F725 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB43FD1C749BE000D5F725 /* QuizViewController.swift */; };
+		4DFB44001C74AF8200D5F725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB43FF1C74AF8200D5F725 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		4DB071301C70B2C200C44D12 /* mannerquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mannerquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB071331C70B2C200C44D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DB071351C70B2C200C44D12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DB071381C70B2C200C44D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DB0713A1C70B2C200C44D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DB0713D1C70B2C200C44D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		4DB0714F1C70B2C200C44D12 /* mannerquizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mannerquizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB071531C70B2C200C44D12 /* mannerquizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mannerquizUITests.swift; sourceTree = "<group>"; };
 		4DB071551C70B2C200C44D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DFB43FB1C749B8300D5F725 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4DFB43FD1C749BE000D5F725 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		4DFB43FF1C74AF8200D5F725 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				4DB071331C70B2C200C44D12 /* AppDelegate.swift */,
-				4DB071351C70B2C200C44D12 /* ViewController.swift */,
+				4DFB43FF1C74AF8200D5F725 /* ViewController.swift */,
+				4DFB43FD1C749BE000D5F725 /* QuizViewController.swift */,
+				4DFB43FB1C749B8300D5F725 /* ResultViewController.swift */,
 				4DB071371C70B2C200C44D12 /* Main.storyboard */,
 				4DB0713A1C70B2C200C44D12 /* Assets.xcassets */,
 				4DB0713C1C70B2C200C44D12 /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DB071361C70B2C200C44D12 /* ViewController.swift in Sources */,
 				4DB071341C70B2C200C44D12 /* AppDelegate.swift in Sources */,
+				4DFB43FC1C749B8300D5F725 /* ResultViewController.swift in Sources */,
+				4DFB44001C74AF8200D5F725 /* ViewController.swift in Sources */,
+				4DFB43FE1C749BE000D5F725 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +490,7 @@
 				4DB0715A1C70B2C200C44D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB0715B1C70B2C200C44D12 /* Build configuration list for PBXNativeTarget "mannerquizTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				4DB0715D1C70B2C200C44D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB0715E1C70B2C200C44D12 /* Build configuration list for PBXNativeTarget "mannerquizUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				4DB071601C70B2C200C44D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

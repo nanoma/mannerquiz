@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ResultViewController.swift
 //  mannerquiz
 //
 //  Created by 花田奈々 on 2016/02/17.
@@ -8,12 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ResultViewController: UIViewController {
+    
+    var correctAnswer: Int = 0
+    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var haikeiImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        resultLabel.text = "\(correctAnswer)"
+        
+        
+        if correctAnswer == 9{
+            haikeiImageView.image = UIImage(named: "")
+        } else if correctAnswer >= 6{
+            haikeiImageView.image = UIImage(named: "")
+        } else if correctAnswer > 3 {
+            haikeiImageView.image = UIImage(named: "")
+        } else {
+            haikeiImageView.image = UIImage(named: "")
+        }
     }
 
     override func didReceiveMemoryWarning() {
