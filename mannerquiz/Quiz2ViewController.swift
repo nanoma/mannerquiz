@@ -1,14 +1,14 @@
 //
-//  QuizViewController.swift
+//  Quiz2ViewController.swift
 //  mannerquiz
 //
-//  Created by 花田奈々 on 2016/02/17.
+//  Created by 花田奈々 on 2016/02/18.
 //  Copyright © 2016年 com.litech. All rights reserved.
 //
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class Quiz2ViewController: UIViewController {
     
     //問題を格納する配列
     var quizArray = [AnyObject]()
@@ -16,30 +16,28 @@ class QuizViewController: UIViewController {
     //正解数
     var correctAnswer: Int = 0
     
-    
     @IBOutlet var quizTextView: UITextView!
     
     //選択肢のボタン
     @IBOutlet var sentaku1: UIButton!
     @IBOutlet var sentaku2: UIButton!
     @IBOutlet var sentaku3: UIButton!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    
+        
         var tmpArray = [AnyObject]()
         
         //------クイズ内容-----------------//
         
-        tmpArray.append(["お客様に上司を紹介するときの正しい言い方は？","私の上司、山田さんでございます。",
-            "私の上司、山田部長でございます。", "私の上司、山田でございます。", 3])
-        tmpArray.append(["あ","い","う","え",2])
-        tmpArray.append(["あ","い","う","え",1])
-        tmpArray.append(["あ","い","う","え",3])
-        tmpArray.append(["あ","い","う","え",2])
+        tmpArray.append(["お客様に上司を紹介するときの正しい言い方は？","aの上司、山田さんでございます。",
+            "aの上司、山田部長でございます。", "aの上司、山田でございます。", 3])
+        tmpArray.append(["あ？","い","う","え",2])
+        tmpArray.append(["あ？","い","う","え",1])
+        tmpArray.append(["あ？","い","う","え",3])
+        tmpArray.append(["あ？","い","う","え",2])
         
         //------クイズ内容-----------------//
         
@@ -49,8 +47,9 @@ class QuizViewController: UIViewController {
             let index = Int(arc4random_uniform(UInt32(tmpArray.count)))
             quizArray.append(tmpArray[index])
             tmpArray.removeAtIndex(index)
-                    }
+        }
         choiceQuiz()
+
     }
     
     
@@ -63,34 +62,36 @@ class QuizViewController: UIViewController {
         sentaku3.setTitle(quizArray[0][3] as? String, forState: .Normal)
     }
     
-    @IBAction func choiceAnswer(sender: UIButton){
+    @IBAction func choiceAnswer2(sender: UIButton){
         if quizArray[0][4] as! Int == sender.tag {
-            
+            //正解数が増えない！？
             correctAnswer++
         }
         
         quizArray.removeAtIndex(0)
         //問題が解き終わったら結果画面へ
         if quizArray.count == 0 {
-            performSegueToResult()
+            performSegueToResult2()
         } else {
             choiceQuiz()
         }
     }
     
-    func performSegueToResult(){
-        performSegueWithIdentifier("toResultView", sender: nil)
-
+    func performSegueToResult2(){
+        performSegueWithIdentifier("toResultView2", sender: nil)
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "toResultView"){
+        if (segue.identifier == "toResultView2"){
             
-            let resultView = segue.destinationViewController as! ResultViewController
-            resultView.correctAnswer = self.correctAnswer
+            let resultView2 = segue.destinationViewController as! Result2ViewController
+            resultView2.correctAnswer = self.correctAnswer
         }
     }
 
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

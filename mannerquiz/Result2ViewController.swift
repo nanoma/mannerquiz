@@ -1,25 +1,25 @@
 //
-//  ResultViewController.swift
+//  Result2ViewController.swift
 //  mannerquiz
 //
-//  Created by 花田奈々 on 2016/02/17.
+//  Created by 花田奈々 on 2016/02/18.
 //  Copyright © 2016年 com.litech. All rights reserved.
 //
 
 import UIKit
 
-class ResultViewController: UIViewController {
+class Result2ViewController: UIViewController {
+    
     
     var correctAnswer: Int = 0
-    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var resultLabel2: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        resultLabel.text = "\(correctAnswer)"
-        
+           resultLabel2.text = "\(correctAnswer)"
     }
 
     override func didReceiveMemoryWarning() {
