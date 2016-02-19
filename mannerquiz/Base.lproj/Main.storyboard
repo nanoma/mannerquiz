@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.5" y="400.5"/>
+            <point key="canvasLocation" x="0.5" y="426.5"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="Vqr-2t-BrR">
@@ -64,7 +64,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame.png" translatesAutoresizingMaskIntoConstraints="NO" id="dDQ-h3-Cdx">
                                 <rect key="frame" x="9" y="0.0" width="356" height="257"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OL-vV-3ez">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OL-vV-3ez">
                                 <rect key="frame" x="20" y="313" width="329" height="80"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -75,7 +75,7 @@
                                     <action selector="choiceAnswer:" destination="dJb-nV-F9y" eventType="touchUpInside" id="FMY-ln-3aS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umt-qI-Nzc">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umt-qI-Nzc">
                                 <rect key="frame" x="20" y="427" width="329" height="80"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -86,7 +86,7 @@
                                     <action selector="choiceAnswer:" destination="dJb-nV-F9y" eventType="touchUpInside" id="Opj-1g-D6J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-I5-nli">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-I5-nli">
                                 <rect key="frame" x="20" y="541" width="329" height="80"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -131,9 +131,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIy-Kg-LCx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkback.png" translatesAutoresizingMaskIntoConstraints="NO" id="mwo-F7-vrr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIy-Kg-LCx">
                                 <rect key="frame" x="26" y="312" width="329" height="80"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Button" image="1.png">
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -141,9 +145,10 @@
                                     <action selector="choiceAnswer2:" destination="igp-7T-VuV" eventType="touchUpInside" id="yJp-5r-J4J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNm-A6-OWc">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNm-A6-OWc">
                                 <rect key="frame" x="26" y="426" width="329" height="80"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Button" image="2.png">
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -151,9 +156,10 @@
                                     <action selector="choiceAnswer2:" destination="igp-7T-VuV" eventType="touchUpInside" id="ZK2-5g-e91"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az3-y1-zPe">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="az3-y1-zPe">
                                 <rect key="frame" x="26" y="540" width="329" height="80"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Button" image="3.png">
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -161,8 +167,11 @@
                                     <action selector="choiceAnswer2:" destination="igp-7T-VuV" eventType="touchUpInside" id="iWv-19-mrf"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame.png" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-tq-4sr">
+                                <rect key="frame" x="11" y="28" width="344" height="235"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-BW-IDS">
-                                <rect key="frame" x="27" y="42" width="320" height="221"/>
+                                <rect key="frame" x="20" y="79" width="326" height="129"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -275,6 +284,7 @@
         <image name="buisinessbutton.png" width="300" height="100"/>
         <image name="flame.png" width="400" height="300"/>
         <image name="lifebutton.png" width="300" height="100"/>
+        <image name="pinkback.png" width="375" height="667"/>
         <image name="titletexttt.png" width="350" height="250"/>
         <image name="totop.png" width="300" height="100"/>
     </resources>
