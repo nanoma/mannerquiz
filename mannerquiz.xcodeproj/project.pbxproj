@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D98308C1C79735A00C4AC91 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9830891C79735A00C4AC91 /* Default-568h@2x.png */; };
+		4D98308D1C79735A00C4AC91 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D98308A1C79735A00C4AC91 /* Default-667h@2x.png */; };
+		4D98308E1C79735A00C4AC91 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D98308B1C79735A00C4AC91 /* Default-736h@3x.png */; };
 		4DB071341C70B2C200C44D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB071331C70B2C200C44D12 /* AppDelegate.swift */; };
 		4DB071391C70B2C200C44D12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB071371C70B2C200C44D12 /* Main.storyboard */; };
 		4DB0713B1C70B2C200C44D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB0713A1C70B2C200C44D12 /* Assets.xcassets */; };
@@ -70,6 +73,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D9830891C79735A00C4AC91 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4D98308A1C79735A00C4AC91 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		4D98308B1C79735A00C4AC91 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		4DB071301C70B2C200C44D12 /* mannerquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mannerquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB071331C70B2C200C44D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DB071381C70B2C200C44D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,6 +152,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D9830881C79735A00C4AC91 /* Defaults-master */ = {
+			isa = PBXGroup;
+			children = (
+				4D9830891C79735A00C4AC91 /* Default-568h@2x.png */,
+				4D98308A1C79735A00C4AC91 /* Default-667h@2x.png */,
+				4D98308B1C79735A00C4AC91 /* Default-736h@3x.png */,
+			);
+			path = "Defaults-master";
+			sourceTree = "<group>";
+		};
 		4DB071271C70B2C200C44D12 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +222,7 @@
 		4DFB44051C754A4200D5F725 /* mannerimages */ = {
 			isa = PBXGroup;
 			children = (
+				4D9830881C79735A00C4AC91 /* Defaults-master */,
 				4DFB44221C755ADF00D5F725 /* flame.png */,
 				4DFB44231C755ADF00D5F725 /* bluback.png */,
 				4DFB44241C755ADF00D5F725 /* pinkback.png */,
@@ -386,10 +403,13 @@
 				4DFB44251C755ADF00D5F725 /* flame.png in Resources */,
 				4DFB444E1C76AC8400D5F725 /* Icon-72@2x.png in Resources */,
 				4DB071391C70B2C200C44D12 /* Main.storyboard in Resources */,
+				4D98308D1C79735A00C4AC91 /* Default-667h@2x.png in Resources */,
 				4DFB44471C76AC8400D5F725 /* Icon-76@2x.png in Resources */,
 				4DFB44451C76AC8400D5F725 /* Icon-60@3x.png in Resources */,
 				4DFB44481C76AC8400D5F725 /* Icon-83.5@2x.png in Resources */,
+				4D98308E1C79735A00C4AC91 /* Default-736h@3x.png in Resources */,
 				4DFB44461C76AC8400D5F725 /* Icon-76.png in Resources */,
+				4D98308C1C79735A00C4AC91 /* Default-568h@2x.png in Resources */,
 				4DFB44271C755ADF00D5F725 /* pinkback.png in Resources */,
 				4DFB44441C76AC8400D5F725 /* Icon-60@2x.png in Resources */,
 				4DFB44501C76AC8400D5F725 /* Icon-Small-50@2x.png in Resources */,
@@ -567,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mannerquiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.mannerquiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choastyle.mannerquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -578,7 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mannerquiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.mannerquiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choastyle.mannerquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
