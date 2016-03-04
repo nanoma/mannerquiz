@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F6U-cR-hbz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xhZ-BT-ZbR">
+            <objects>
+                <viewController id="F6U-cR-hbz" customClass="ViewController" customModule="mannerquiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yG8-SJ-NDh"/>
+                        <viewControllerLayoutGuide type="bottom" id="kHr-Zc-a4m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dKq-Ql-psP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="NUg-An-OLh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQy-CY-1pN">
+                                <rect key="frame" x="33" y="276" width="255" height="85"/>
+                                <state key="normal" image="buisinessbutton.png"/>
+                                <connections>
+                                    <segue destination="cEH-25-nNI" kind="modal" id="sao-eT-T78"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titletexttt.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mzm-R0-B8X">
+                                <rect key="frame" x="7" y="15" width="307" height="235"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a2-ec-UkZ">
+                                <rect key="frame" x="29" y="385" width="263" height="87"/>
+                                <state key="normal" image="lifebutton.png"/>
+                                <connections>
+                                    <segue destination="1RC-8V-wvd" kind="modal" id="bDw-8B-J3N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHX-FH-GEd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="330"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="GPU-3q-CtM">
+            <objects>
+                <viewController id="cEH-25-nNI" customClass="QuizViewController" customModule="mannerquiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CRM-ES-7xu"/>
+                        <viewControllerLayoutGuide type="bottom" id="JG5-jw-V1F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FrB-Tz-XPN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluback.png" translatesAutoresizingMaskIntoConstraints="NO" id="B3s-lz-Sf0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame.png" translatesAutoresizingMaskIntoConstraints="NO" id="Am1-Pl-0Tl">
+                                <rect key="frame" x="9" y="7" width="291" height="180"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fJL-Jm-RC3">
+                                <rect key="frame" x="20" y="190" width="280" height="74"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Button" image="1.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="cEH-25-nNI" eventType="touchUpInside" id="ZAS-VW-bM3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-kc-ah8">
+                                <rect key="frame" x="20" y="284" width="280" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Button" image="2.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="cEH-25-nNI" eventType="touchUpInside" id="yOt-qe-1Te"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-6I-TXA">
+                                <rect key="frame" x="20" y="48" width="270" height="94"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-Hf-Hkj">
+                                <rect key="frame" x="20" y="381" width="280" height="73"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Button" image="3.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="cEH-25-nNI" eventType="touchUpInside" id="DoZ-Dq-019"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="quizTextView" destination="1GX-6I-TXA" id="Lhy-QJ-10W"/>
+                        <outlet property="sentaku1" destination="fJL-Jm-RC3" id="DgZ-Up-7rl"/>
+                        <outlet property="sentaku2" destination="Agn-kc-ah8" id="cwK-06-iKj"/>
+                        <outlet property="sentaku3" destination="dnD-Hf-Hkj" id="67C-DD-cDw"/>
+                        <segue destination="fm1-KH-anl" kind="modal" identifier="toResultView" id="hd1-a6-jBq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zv6-Zj-pq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="330"/>
+        </scene>
+        <!--Quiz2 View Controller-->
+        <scene sceneID="VS3-FD-cGb">
+            <objects>
+                <viewController id="1RC-8V-wvd" customClass="Quiz2ViewController" customModule="mannerquiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QuF-ZV-9Zm"/>
+                        <viewControllerLayoutGuide type="bottom" id="a0Y-4h-glJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ygh-f4-xxb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkback.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQb-gO-cy3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame.png" translatesAutoresizingMaskIntoConstraints="NO" id="kzF-l9-Ff9">
+                                <rect key="frame" x="13" y="0.0" width="289" height="194"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X0U-oj-2Rh">
+                                <rect key="frame" x="25" y="41" width="266" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Xb2-e5-gWg">
+                                <rect key="frame" x="20" y="391" width="282" height="69"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Button" image="3.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer2:" destination="1RC-8V-wvd" eventType="touchUpInside" id="k8k-Y6-mvx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-pR-hSy">
+                                <rect key="frame" x="20" y="293" width="282" height="69"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Button" image="2.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer2:" destination="1RC-8V-wvd" eventType="touchUpInside" id="Nf9-TC-p1x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GRu-Hh-hFQ">
+                                <rect key="frame" x="20" y="195" width="280" height="69"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Button" image="1.png">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceAnswer2:" destination="1RC-8V-wvd" eventType="touchUpInside" id="pDp-CT-jZj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="quizTextView" destination="X0U-oj-2Rh" id="5Bx-Qi-aNO"/>
+                        <outlet property="sentaku1" destination="GRu-Hh-hFQ" id="o1b-Il-mSf"/>
+                        <outlet property="sentaku2" destination="EiR-pR-hSy" id="UiR-tA-XX5"/>
+                        <outlet property="sentaku3" destination="Xb2-e5-gWg" id="SnP-Zh-3Q1"/>
+                        <segue destination="dMo-qu-XQj" kind="modal" identifier="toResultView2" id="2mG-SC-2Fs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ft0-Dx-mUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="1147"/>
+        </scene>
+        <!--Result2 View Controller-->
+        <scene sceneID="30P-An-8wH">
+            <objects>
+                <viewController id="dMo-qu-XQj" customClass="Result2ViewController" customModule="mannerquiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qHg-0b-p2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kjj-Xg-fJQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tTY-Q2-rgW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="xg7-XN-3yZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhF-59-Ojh">
+                                <rect key="frame" x="103" y="74" width="115" height="115"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwc-pl-UZ8">
+                                <rect key="frame" x="61" y="317" width="198" height="66"/>
+                                <state key="normal" image="totop.png"/>
+                                <connections>
+                                    <segue destination="F6U-cR-hbz" kind="modal" id="gt6-Wf-S8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel2" destination="dhF-59-Ojh" id="RsN-lr-yP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzD-vD-qx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="1139"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="qIE-Sc-A8j">
+            <objects>
+                <viewController id="fm1-KH-anl" customClass="ResultViewController" customModule="mannerquiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xbz-32-kQk"/>
+                        <viewControllerLayoutGuide type="bottom" id="92I-WI-U8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8t3-kc-ONj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-5M-5JN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEt-Wz-dUY">
+                                <rect key="frame" x="102" y="49" width="116" height="115"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.32000000000000001" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPC-nQ-fET">
+                                <rect key="frame" x="53" y="270" width="214" height="71"/>
+                                <state key="normal" image="totop.png"/>
+                                <connections>
+                                    <segue destination="F6U-cR-hbz" kind="modal" id="Vmz-MI-ShQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="aEt-Wz-dUY" id="wxF-lg-sFm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pbq-h4-hFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="60" height="60"/>
+        <image name="2.png" width="60" height="60"/>
+        <image name="3.png" width="60" height="60"/>
+        <image name="background.png" width="375" height="667"/>
+        <image name="bluback.png" width="375" height="667"/>
+        <image name="buisinessbutton.png" width="300" height="100"/>
+        <image name="flame.png" width="400" height="300"/>
+        <image name="lifebutton.png" width="300" height="100"/>
+        <image name="pinkback.png" width="375" height="667"/>
+        <image name="titletexttt.png" width="350" height="250"/>
+        <image name="totop.png" width="300" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gt6-Wf-S8T"/>
+    </inferredMetricsTieBreakers>
+</document>

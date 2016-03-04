@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D4A26C71C895B3800037EE9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A26C01C895B3800037EE9 /* .gitignore */; };
+		4D4A26C81C895B3800037EE9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A26C21C895B3800037EE9 /* Default-568h@2x.png */; };
+		4D4A26C91C895B3800037EE9 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A26C31C895B3800037EE9 /* Default-667h@2x.png */; };
+		4D4A26CA1C895B3800037EE9 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A26C41C895B3800037EE9 /* Default-736h@3x.png */; };
+		4D4A26CC1C895B3800037EE9 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A26C61C895B3800037EE9 /* StoryboardHelper.swift */; };
+		4D4A26CE1C895CE900037EE9 /* 3.5inch.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A26CD1C895CE900037EE9 /* 3.5inch.Storyboard */; };
 		4D98308C1C79735A00C4AC91 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9830891C79735A00C4AC91 /* Default-568h@2x.png */; };
 		4D98308D1C79735A00C4AC91 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D98308A1C79735A00C4AC91 /* Default-667h@2x.png */; };
 		4D98308E1C79735A00C4AC91 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D98308B1C79735A00C4AC91 /* Default-736h@3x.png */; };
@@ -73,6 +79,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D4A26C01C895B3800037EE9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4D4A26C21C895B3800037EE9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4D4A26C31C895B3800037EE9 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		4D4A26C41C895B3800037EE9 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		4D4A26C61C895B3800037EE9 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		4D4A26CD1C895CE900037EE9 /* 3.5inch.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = 3.5inch.Storyboard; sourceTree = "<group>"; };
 		4D9830891C79735A00C4AC91 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4D98308A1C79735A00C4AC91 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		4D98308B1C79735A00C4AC91 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -152,6 +164,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D4A26BF1C895B3700037EE9 /* StoryboardHelper-master */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A26C01C895B3800037EE9 /* .gitignore */,
+				4D4A26C11C895B3800037EE9 /* Defaults */,
+				4D4A26C61C895B3800037EE9 /* StoryboardHelper.swift */,
+			);
+			path = "StoryboardHelper-master";
+			sourceTree = "<group>";
+		};
+		4D4A26C11C895B3800037EE9 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A26C21C895B3800037EE9 /* Default-568h@2x.png */,
+				4D4A26C31C895B3800037EE9 /* Default-667h@2x.png */,
+				4D4A26C41C895B3800037EE9 /* Default-736h@3x.png */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
 		4D9830881C79735A00C4AC91 /* Defaults-master */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +217,7 @@
 		4DB071321C70B2C200C44D12 /* mannerquiz */ = {
 			isa = PBXGroup;
 			children = (
+				4D4A26BF1C895B3700037EE9 /* StoryboardHelper-master */,
 				4DFB44281C76AC8400D5F725 /* ios */,
 				4DFB44051C754A4200D5F725 /* mannerimages */,
 				4DB071331C70B2C200C44D12 /* AppDelegate.swift */,
@@ -197,6 +230,7 @@
 				4DB0713F1C70B2C200C44D12 /* Info.plist */,
 				4DFB441C1C75510900D5F725 /* Quiz2ViewController.swift */,
 				4DFB441E1C75511700D5F725 /* Result2ViewController.swift */,
+				4D4A26CD1C895CE900037EE9 /* 3.5inch.Storyboard */,
 			);
 			path = mannerquiz;
 			sourceTree = "<group>";
@@ -384,6 +418,7 @@
 				4DFB44191C754FAB00D5F725 /* 1.png in Resources */,
 				4DFB44511C76AC8400D5F725 /* Icon.png in Resources */,
 				4DFB44431C76AC8400D5F725 /* Icon-40@3x.png in Resources */,
+				4D4A26CE1C895CE900037EE9 /* 3.5inch.Storyboard in Resources */,
 				4DFB444D1C76AC8400D5F725 /* Icon-72.png in Resources */,
 				4DFB44111C754B8E00D5F725 /* titletexttt.png in Resources */,
 				4DFB44151C754C4100D5F725 /* lifebutton.png in Resources */,
@@ -391,6 +426,7 @@
 				4DFB44491C76AC8400D5F725 /* Icon-Small.png in Resources */,
 				4DFB440A1C754A4200D5F725 /* background.png in Resources */,
 				4DFB441B1C754FAB00D5F725 /* 3.png in Resources */,
+				4D4A26C81C895B3800037EE9 /* Default-568h@2x.png in Resources */,
 				4DFB44411C76AC8400D5F725 /* Icon-40.png in Resources */,
 				4DFB44141C754C4100D5F725 /* buisinessbutton.png in Resources */,
 				4DFB441A1C754FAB00D5F725 /* 2.png in Resources */,
@@ -402,6 +438,7 @@
 				4DB0713B1C70B2C200C44D12 /* Assets.xcassets in Resources */,
 				4DFB44251C755ADF00D5F725 /* flame.png in Resources */,
 				4DFB444E1C76AC8400D5F725 /* Icon-72@2x.png in Resources */,
+				4D4A26C91C895B3800037EE9 /* Default-667h@2x.png in Resources */,
 				4DB071391C70B2C200C44D12 /* Main.storyboard in Resources */,
 				4D98308D1C79735A00C4AC91 /* Default-667h@2x.png in Resources */,
 				4DFB44471C76AC8400D5F725 /* Icon-76@2x.png in Resources */,
@@ -415,7 +452,9 @@
 				4DFB44501C76AC8400D5F725 /* Icon-Small-50@2x.png in Resources */,
 				4DFB444F1C76AC8400D5F725 /* Icon-Small-50.png in Resources */,
 				4DFB444A1C76AC8400D5F725 /* Icon-Small@2x.png in Resources */,
+				4D4A26C71C895B3800037EE9 /* .gitignore in Resources */,
 				4DFB44211C75577F00D5F725 /* totop.png in Resources */,
+				4D4A26CA1C895B3800037EE9 /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +481,7 @@
 			files = (
 				4DB071341C70B2C200C44D12 /* AppDelegate.swift in Sources */,
 				4DFB43FC1C749B8300D5F725 /* ResultViewController.swift in Sources */,
+				4D4A26CC1C895B3800037EE9 /* StoryboardHelper.swift in Sources */,
 				4DFB441F1C75511700D5F725 /* Result2ViewController.swift in Sources */,
 				4DFB441D1C75510900D5F725 /* Quiz2ViewController.swift in Sources */,
 				4DFB44001C74AF8200D5F725 /* ViewController.swift in Sources */,
